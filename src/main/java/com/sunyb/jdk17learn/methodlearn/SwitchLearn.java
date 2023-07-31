@@ -1,4 +1,4 @@
-package com.sunyb.jdk17learn.m1;
+package com.sunyb.jdk17learn.methodlearn;
 
 import java.time.DayOfWeek;
 

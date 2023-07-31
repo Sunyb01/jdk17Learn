@@ -1,6 +1,6 @@
 package com.sunyb.jdk17learn;
 
-import com.sunyb.jdk17learn.m1.SwitchLearn;
+import com.sunyb.jdk17learn.methodlearn.SwitchLearn;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
