@@ -1,0 +1,22 @@
+server:
+  port: 9090
+
+spring:
+  profiles:
+    active: dev
+logging:
+  config: classpath:logback-spring-${spring.profiles.active}.xml
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  type-aliases-super-type: java.lang.Object
+  mapper-locations: classpath:/mapper/**/*Mapper.xml
+  type-aliases-package: com.sunyb.jdk17Learn.dal.domain
